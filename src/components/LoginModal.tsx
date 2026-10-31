@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { StudentInfo, ExamSettings } from '../types/cbt';
 import { ShieldCheck, UserCheck, Key, Sparkles, BookOpen, GraduationCap } from 'lucide-react';
+import { PusmendikLogo } from './PusmendikLogo';
 
 interface LoginModalProps {
   settings: ExamSettings;
@@ -58,9 +59,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ settings, onStartExam, o
       <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
         {/* Card Header with Pusmendik Theme */}
         <div className="bg-gradient-to-r from-[#1b365d] via-blue-900 to-[#1b365d] text-white p-6 sm:p-7 text-center relative border-b-4 border-amber-400">
-          <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-3 border border-white/20 backdrop-blur-xs">
-            <UserCheck className="w-8 h-8 text-amber-300" />
-          </div>
+          <PusmendikLogo size="lg" className="mx-auto mb-3" />
           <h2 className="text-xl sm:text-2xl font-black tracking-wide uppercase text-amber-300">
             Konfirmasi Data Peserta
           </h2>

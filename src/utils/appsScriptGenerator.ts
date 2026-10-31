@@ -429,9 +429,15 @@ export function generateIndexHtml(settings: ExamSettings, questions: Question[])
     <div class="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-between gap-3">
       <!-- Logo & Title -->
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center p-1 shadow-sm shrink-0">
-          <svg class="w-8 h-8 text-[#1b365d]" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/>
+        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#1b365d] via-blue-900 to-[#0f172a] flex items-center justify-center p-1.5 shadow-md shrink-0 border-2 border-amber-300 ring-2 ring-amber-400/30">
+          <svg class="w-full h-full text-amber-300" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="21" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="2 2" />
+            <circle cx="24" cy="24" r="18" stroke="#38bdf8" stroke-width="0.8" opacity="0.7" />
+            <path d="M12 34C16 32 20 33 24 35C28 33 32 32 36 34V18C32 16 28 17 24 19C20 17 16 16 12 18V34Z" fill="#1e3a8a" stroke="#f59e0b" stroke-width="1.2" />
+            <path d="M22 23L21 33H27L26 23H22Z" fill="#f59e0b" />
+            <rect x="20.5" y="21" width="7" height="2.5" rx="1" fill="#fbbf24" />
+            <path d="M24 7C26.5 11.5 28.5 14 27.5 18C25.8 17 24 16 23 18C21.8 15 22 11.5 24 7Z" fill="#38bdf8" />
+            <path d="M24 11C25 13.5 25.5 15.5 25 17.5C24.2 17 23.5 16.5 23 17.5C22.8 16 23 14 24 11Z" fill="#ffffff" />
           </svg>
         </div>
         <div>

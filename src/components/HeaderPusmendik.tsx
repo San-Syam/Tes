@@ -7,6 +7,7 @@ import React from 'react';
 import { Clock, HelpCircle, Grid, Code, PlayCircle, BookOpen, AlertCircle } from 'lucide-react';
 import { formatSecondsToTimer } from '../utils/cbtLogic';
 import { ExamSettings } from '../types/cbt';
+import { PusmendikLogo } from './PusmendikLogo';
 
 interface HeaderPusmendikProps {
   settings: ExamSettings;
@@ -88,12 +89,7 @@ export const HeaderPusmendik: React.FC<HeaderPusmendikProps> = ({
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
         {/* Branding & Logo */}
         <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center p-1 shadow-md shrink-0 border-2 border-amber-300">
-            {/* Tut Wuri Handayani SVG Silhouette */}
-            <svg className="w-8 h-8 text-[#1b365d]" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L1 8.5L12 15L20 10.28V17H22V8.5L12 2M12 4.41L18.5 8.5L12 12.59L5.5 8.5L12 4.41M5 12.28V16.28L12 20.5L19 16.28V12.28L12 16.5L5 12.28Z" />
-            </svg>
-          </div>
+          <PusmendikLogo size="md" />
           <div>
             <div className="flex items-center gap-2">
               <span className="text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950 px-1.5 py-0.5 rounded">
